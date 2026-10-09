@@ -12,9 +12,9 @@ function BlogShare({ data }) {
             target="_blank"
             href={`https://twitter.com/intent/tweet?text=${
               data.Title
-            } by @soumyajit4419
+            } by @nwabueze1
             &url=blogs.soumya-jit.tech/blogs/${String(
-              data.Title.split(" ").join("-").toLowerCase()
+              data.Title.split(" ").join("-").toLowerCase(),
             )}
             &hashtags=${data.Tags.split(" ")}`}
           >

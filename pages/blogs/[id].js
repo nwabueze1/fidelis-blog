@@ -30,7 +30,7 @@ export const getStaticProps = async (context) => {
 
   const page = allBlogs.find(
     (blog) =>
-      String(blog.data.Title.split(" ").join("-").toLowerCase()) === params.id
+      String(blog.data.Title.split(" ").join("-").toLowerCase()) === params.id,
   );
 
   const { data, content } = page;
@@ -66,7 +66,7 @@ function id({ data, content, id, headings, topics }) {
         <meta property="og:description" content={data.Abstract} />
         <meta
           property="og:image"
-          content={`https://raw.githubusercontent.com/soumyajit4419/Bits-0f-C0de/main/public${data.HeaderImage}`}
+          content={`https://raw.githubusercontent.com/nwabueze1/Bits-0f-C0de/main/public${data.HeaderImage}`}
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -75,7 +75,7 @@ function id({ data, content, id, headings, topics }) {
         <meta property="twitter:description" content={data.Abstract} />
         <meta
           property="twitter:image"
-          content={`https://raw.githubusercontent.com/soumyajit4419/Bits-0f-C0de/main/public${data.HeaderImage}`}
+          content={`https://raw.githubusercontent.com/nwabueze1/Bits-0f-C0de/main/public${data.HeaderImage}`}
         />
       </Head>
 
